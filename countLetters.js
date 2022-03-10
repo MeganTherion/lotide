@@ -5,20 +5,21 @@ const assertEqual = function(actual, expected) {
     console.log(`👎 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-const countLetters = function(sentence) {
+const countLetters = function(sentence) { 
 const letterCount = {};
-
-for (const letter of sentence) {
-  //console.log(letter);
-if (letterCount[letter]) {
-  letterCount[letter] += 1;
-} else {
+const newSentence = sentence.replace(/\s/g, "");
+  //console.log(sentence);
+for (const letter of newSentence) {
+  if (letterCount[letter]) {
+    letterCount[letter] += 1;
+  } else {
   letterCount[letter] = 1;
 }
 }
+
 return letterCount;
 }
 
 
-const newSentence = "LIGHTHOUSE";
+const newSentence = "lighthouse in the house";
 console.log(countLetters(newSentence));
