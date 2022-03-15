@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 const middle = function(array) {
   let middleInteger = [];
   //if array is even 
@@ -7,5 +9,4 @@ const middle = function(array) {
   middleInteger = array[Math.floor(array.length / 2)];
 return middleInteger;
   }
-  console.log(middle([1, 2, 3, 4, 5]));
-console.log(middle([1, 2, 3, 4, 5]));
+  module.exports = middle;
