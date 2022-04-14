@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual')
+//const assertEqual = require('./assertEqual')
 
 const eqArrays = function(a, b) {
   //console.log("a", a, "b", b);
@@ -7,18 +7,16 @@ const eqArrays = function(a, b) {
   }
   for (let i = 0; i < a.length; i++) {
     if (Array.isArray(a[i]) && Array.isArray(b[i])) {
-      console.log("arrays here");
       if (!eqArrays(a[i], b[i])) {
         return false;
       }
-    }
-    else if (a[i] !== b[i]) {
+    } else if (a[i] !== b[i]) {
       return false;
     }
   }
   return true;
 };
-console.log(eqArrays([[2, 3], [4]], [[2, 3], [4]])) // => true
+//console.log(eqArrays([[2, 3], [4]], [[2, 3], [4]])) // => true
 // console.log(eqArrays([1, 2], [1, 2]))
 // console.log(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]])) // => false
 // eqArrays([[2, 3], [4]], [[2, 3], 4]) // => false 
