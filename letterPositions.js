@@ -9,12 +9,12 @@ const letterPositions = function(sentence) {
     if (results[sentence[i]]) {
       results[sentence[i]].push([i]);
     } else {
-    results[newSentence[i]] = [i];
+      results[newSentence[i]] = [i];
    
-  }
+    }
   }
   
   return results;
-  }
+};
  
-  module.exports = letterPositions;
+module.exports = letterPositions;
