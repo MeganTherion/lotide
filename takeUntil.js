@@ -1,5 +1,6 @@
 const takeUntil = function(array, callback) {
   const result = [];
+<<<<<<< HEAD
   for (let items of array) { // 1: loop through array
     if (callback(items)) {  // if function x(items) (plugs items of array into x function)
       
@@ -12,3 +13,12 @@ const takeUntil = function(array, callback) {
  const data2 = ["I've", "been", "to", "hollywood", ",", "I've", "been", "to", "redwood"];
  const results2 = takeUntil(data2, x => x ===','); //function takes parameter 'x' and compares 'x' to ',' in array
  console.log(results2);
+=======
+  for (let items of array) {
+    if (callback(items)) {
+      return result;
+    }
+    result.push(items);
+  }
+};
+>>>>>>> 17d0d0ad522478eeb9b554a3a151f4554e9521fc

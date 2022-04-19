@@ -17,4 +17,8 @@ const letterPositions = function(sentence) {
   return results;
 };
  
+<<<<<<< HEAD
 module.exports = letterPositions;
+=======
+module.exports = letterPositions;
+>>>>>>> 17d0d0ad522478eeb9b554a3a151f4554e9521fc
