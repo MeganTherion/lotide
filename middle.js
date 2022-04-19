@@ -10,6 +10,6 @@ const middle = function(array) {
 } 
   return middleInteger;
 }
-  //module.exports = middle;
+module.exports = middle;
 console.log("odd", middle([1, 2, 3, 4, 5], 6, 7));
 console.log("even", middle([1, 2, 3, 4, 5, 6]));
